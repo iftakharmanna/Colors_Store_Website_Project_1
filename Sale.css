@@ -1,0 +1,302 @@
+body {
+    min-height : 100vh;
+    min-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+   
+
+.discount{
+    margin-top: 0px;
+    margin-bottom: 0px;
+     background-color: yellow;
+     border-style: none;
+     max-width: 100%;
+     font-size: 1.7em;
+     letter-spacing: 3px;
+     text-align: center;
+     color: black;
+     margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+     justify-content: center;
+     font-weight: bold;
+     padding-right: 100px;
+     padding-left: 100px;
+ 
+}
+.Title{
+    cursor: pointer;
+    text-decoration: none;  
+    border-radius: 5px;
+    max-width: 100%;
+    font-size: 3.3em;
+    letter-spacing: 6px;
+    text-align: center;
+    color: black;
+    margin-top: 0px;
+    background-color: rgb(255, 248, 248);
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    font-weight: normal;
+    -webkit-text-stroke: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    background-color: rgb(37, 31, 31);
+    letter-spacing: 6px;
+    max-width:100%;
+    height:auto;
+    word-spacing: 45px;
+   
+  }
+  
+li a {
+     float: right;
+}
+  
+li a {
+    max-width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 47.6px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    max-width: 100%;
+    color: rgb(155, 220, 220);
+    transition: color;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Utility stylings */
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+.lg-title,
+.sm-title{
+    font-family: 'Roboto', sans-serif;
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.lg-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+}
+ 
+/* product section */
+.products{
+    background: var(--alice-blue);
+    padding: 3.2rem 0;
+}
+.products .text-light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+}
+.product{
+    margin: 2rem;
+    position: relative;
+}
+.product-content{
+    background: var(--gray);
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+.product-img{
+    background: var(--white-light);
+    box-shadow: 0 0 20px 10px var(--white-light);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+.product-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.btn-cart, .btn-buy{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+}
+.btn-cart{
+    background: black;
+    color: white;
+}
+.btn-cart:hover{
+    background: var(--carribean-green);
+}
+.btn-buy{
+    background: white;
+}
+.btn-buy:hover{
+    background: var(--carribean-green);
+    color: #fff;
+}
+.product-info{
+    background: white;
+    padding: 2rem;
+}
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating span{
+    color: var(--carribean-green);
+}
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+.product-price:first-of-type{
+    text-decoration: line-through;
+    color: var(--carribean-green);
+}
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+.product:hover .product-img{
+    background: var(--carribean-green);
+}
+.product:hover .product-btns{
+    opacity: 1;
+}
+
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-collection-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex{
+        height: 60vh;
+    }
+    .product-col-left{
+        height: 121.5vh;
+    }
+}
+.contact{
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    background-color:  rgb(36, 29, 29);
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    -webkit-text-stroke: 1px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: -55px;
+    margin-bottom: 0px;
+}
+
+.phone{
+    line-height: 2;
+    cursor: pointer;
+    max-width: 100%;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+    text-align: center;
+    color: rgb(18, 15, 15);
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.footer {
+    margin-top: 0px;
+    position: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(11, 0, 0);
+    text-align: center;
+}
+ 
